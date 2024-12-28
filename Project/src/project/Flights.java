@@ -259,7 +259,7 @@ public class Flights {
         } while (rm_more);
     }
     
-    /*public void Update_Flight() {
+    public void Update_Flight() {
     Display_Flight();
 
     Menu m = new Menu(8);
@@ -371,7 +371,7 @@ public class Flights {
 
                         case 8:
                             System.out.println("Returning to Main Menu...");
-                            return; // Quay về menu chính
+                            return; // Quay vá» menu chÃ­nh
                             
                             default:
                                 System.out.println("Invalid choice. Please select a valid option.");
@@ -389,7 +389,7 @@ public class Flights {
             up_more = choice.equals("Y");
 
         } while (up_more);
-    }*/
+    }
 
     
     private void confirmAndWriteToFile(Flights updatedFlight, ArrayList<Flight> fs) {
@@ -398,7 +398,7 @@ public class Flights {
         String choice = sc.nextLine().trim().toUpperCase();
 
         if (choice.equals("Y")) {
-            writeToFile(fs, false); // Ghi toàn bộ danh sách
+            writeToFile(fs, false); // Ghi toÃ n bá»™ danh sÃ¡ch
             System.out.println("Changes for flight ID " + updatedFlight + " have been saved.");
         } else {
             System.out.println("Changes were not saved.");
